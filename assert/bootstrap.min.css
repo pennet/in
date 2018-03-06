@@ -5400,7 +5400,7 @@ a.badge:focus, a.badge:hover {
 	margin-bottom: 30px;
 	color: inherit;
 	border-bottom: 1px solid #DCDCDC;
-	box-shadow: 0px 0px 6px 1px #DCDCDC;
+	box-shadow: 0px 0px 4px 1px #DCDCDC;
 }
 
 .jumbotron .h1, .jumbotron h1 {
