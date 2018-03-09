@@ -1,11 +1,13 @@
 html {
-	font-family: sans-serif;
+	font-family:'Linux Libertine', 'Georgia', 'Times', serif;
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%;
+	
 }
 
 body {
-	margin: 0
+	margin: 0;
+	
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup,
@@ -1342,7 +1344,7 @@ body {
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
-	background-color: #fff
+	background-color: #fafafa;
 }
 
 button, input, select, textarea {
@@ -5019,11 +5021,10 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 	{
 	color: #fff;
 	background-color: transparent;
-	border:1px solid #fff;
-	padding:5px;
+	font-family:'Linux Libertine', 'Georgia', 'Times', serif;
+	font-weight:bold;
 	width:relative;
-	border-radius:10px;
-	margin-top:5px;
+	
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus,
@@ -5396,11 +5397,16 @@ a.badge:focus, a.badge:hover {
 
 .jumbotron {
 	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-bottom: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
 	color: inherit;
-	border-bottom: 1px solid #DCDCDC;
-	box-shadow: 0px 0px 4px 1px #DCDCDC;
+	border: 1px solid #DCDCDC;
+	background-color:#fff;
+	
+	
+	
+	
+	
 }
 
 .jumbotron .h1, .jumbotron h1 {
@@ -5408,9 +5414,10 @@ a.badge:focus, a.badge:hover {
 }
 
 .jumbotron p {
-	margin-bottom: 15px;
-	
-	font-size:16px;text-align:justify;font-family: 'Linux Libertine','Georgia','Times',serif;
+	padding:10px;
+	margin-bottom: 1px;
+	height:60px;font-weight:bold;text-align:left;
+	font-size:14px;text-align:justify;font-family: 'Linux Libertine','Georgia','Times',serif;
 }
 
 
@@ -5436,6 +5443,7 @@ a.badge:focus, a.badge:hover {
 	.container .jumbotron, .container-fluid .jumbotron {
 		padding-right: 60px;
 		padding-left: 60px
+		
 	}
 	.jumbotron .h1, .jumbotron h1 {
 		font-size: 63px

@@ -29,74 +29,73 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-
 <style>
 .mySlides {
 	display: none;
-}
-.text{
-font-size:16px;
-font-family:'Linux Libertine', 'Georgia', 'Times', serif;
-font-weight:bold;
-color:	#000;
+	height: 385px;
 }
 
+.mySlidesHYD {
+	height: 345px;
+}
+
+.text {
+	font-size: 16px;
+	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+	font-weight: bold;
+	color: #000;
+	margin-top: 10px;
+}
 
 img {
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    padding: 2px;
-    width: 150px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	padding: 2px;
+	width: 150px;
 }
 
 img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    
+	/*  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); */
+	
 }
 
-.imgs{
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 5px;
- background-color:transparent;
-    position:relative;
-    width:150px;
-    margin-bottom:10px;
-    float:left;
-    margin:5px;
-
-}
-.imgs p a{
-text-align:center;
-color: 	#337ab7;
-font-weight:bold;
-text-decoration:none;
-padding:20px;
-
+.imgs {
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 5px;
+	background-color: transparent;
+	position: relative;
+	width: 150px;
+	margin-bottom: 10px;
+	float: left;
+	margin: 5px;
 }
 
-p #link:hover{
-
-color:#000;
-box-shadow:none;
-
+.imgs p a {
+	text-align: center;
+	color: #337ab7;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 20px;
 }
 
+p #link:hover {
+	color: #000;
+	box-shadow: none;
+}
 
 .close {
-    float:right;
-    display:inline-block;
-    padding:2px 5px;
-    background:transparent;
-    color:#000;
-    font-size:20px;
-    font-weight:bold;
+	float: right;
+	display: inline-block;
+	padding: 2px 5px;
+	background: transparent;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
 }
-.close:hover{
-color:red;
 
+.close:hover {
+	color: red;
 }
 </style>
 <body>
@@ -106,6 +105,8 @@ color:red;
 	<nav class="navbar navbar-fixed-top navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
+
+				<!-- 	
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
 					aria-controls="navbar">
@@ -113,12 +114,24 @@ color:red;
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
+				 -->
+
+
+				<!--Off Canvas Show/Hide Start  -->
+				<button type="button" class="btn btn-primary btn-xs"
+					data-toggle="offcanvas">Menu</button>
+
+
 				<a class="navbar-brand" href="index.html">PE<sup
 					style="color: #FFF600; margin-left: 3px;">N</sup><sub
 					style="color: #FFBF00; margin-right: 3px;">N</sub>ET
 				</a>
 			</div>
-			<div id="navbar" class="collapse navbar-collapse nav navbar-nav">
+
+			<!--Off Canvas Show/Hide Stop  -->
+
+			<!-- 	
+		<div id="navbar" class="collapse navbar-collapse nav navbar-nav">
 				<ul class="nav navbar-nav">
 					<li><a href="#home">Bio-Info</a></li>
 					<li><a href="#engineering">Engineering Life</a></li>
@@ -129,6 +142,10 @@ color:red;
 
 				</ul>
 			</div>
+			
+			 -->
+
+
 			<!-- /.nav-collapse -->
 		</div>
 		<!-- /.container -->
@@ -140,10 +157,13 @@ color:red;
 		<div class="row row-offcanvas row-offcanvas-right">
 
 			<div class="col-xs-12 col-sm-9">
+				<!-- 	Off Canvas Side Bar
 				<p class="pull-right visible-xs">
 					<button type="button" class="btn btn-primary btn-xs"
-						data-toggle="offcanvas">Red Notifications</button>
+						data-toggle="offcanvas">Menu</button>
 				</p>
+				 -->
+
 				<div class="jumbotron">
 					<p style="font-size: 22px; font-weight: bold;">PENCHAL NETWORK</p>
 					<p>This is an example to show the potential of an offcanvas
@@ -151,114 +171,137 @@ color:red;
 						sizes to see it in action.</p>
 				</div>
 
-				<div class="jumbotron">
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 40px;">
+
 					<p
-						style="font-size: 22px; font-weight: bold; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: underline;">Bio
-						Information</p>
-					<p>This is an example to show the potential of an offcanvas
-						layout pattern in Bootstrap. Try some responsive-range viewport
-						sizes to see it in action.</p>
+						style="font-weight: bold; border-radius: 1px; font-size: 18px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;">Profile
+						@ Glance</p>
+
+					<p
+						style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;">This
+						is an example to show the potential of an offcanvas layout pattern
+						in Bootstrap. Try some responsive-range viewport sizes to see it
+						in action.</p>
 				</div>
 
 
-
-
-
 				<div class="jumbotron"
-					style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 20px;"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
 					id="engineering">
 					<p
-						style="text-align: center; padding:10px ;border-radius:2px;font-size: 18px; font-weight: bold;background-color: #337ab7;color:#fff; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;">
+						style="text-align: left; padding: 10px; border-radius: 1px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;">
 						Engineering Photo Gallary</p>
-					<div class="w3-content w3-section" style="width: 100%;margin-top:-15px;">
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
 						<img class="mySlides"
 							src="https://www.w3schools.com/w3css/img_la.jpg"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; "> <img class="mySlides"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 1px;">
+						<img class="mySlides"
 							src="https://www.w3schools.com/w3css/img_ny.jpg"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; "> <img class="mySlides"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 1px;">
+						<img class="mySlides"
 							src="https://www.w3schools.com/w3css/img_chicago.jpg"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; ">
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 1px;">
 					</div>
+					<div class="text">
+						&#9757; @Golkonda
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px;">This
+							is an example to show the potential of an offcanvas layout
+							pattern in Bootstrap. Try some responsive-range viewport sizes to
+							see it in action.</p>
+					</div>
+
+<!-- More Options
 					<p
-						style="padding-top: 20px; font-size: 24px; text-align: center; font-weight: bold; font-family: serif;">
-						<a class="btn btn-default" href="galary.html" role="button">Photo
-							Gallery »</a>
+						style="padding-top: 20px; font-size: 64px; text-align: right; font-weight: bold; font-family: serif;">
+						<a class="btn btn-default" href="galary.html" role="button"
+							style="background-color: #fff; color: #262626; font-size: 18px;">--»</a>
 					</p>
 
-
-				</div>
-
-
-				<div class="jumbotron"
-					style="padding: 6px; padding-bottom: 0px; padding-top: 10px;">
-					<p
-						style="font-size: 16px;color:#CF1020;text-align:center; font-weight: bold; font-family: 'Linux Libertine', 'Georgia', 'Times', serif;">Dare
-						Dreams To Achieve.. </p>
+ -->
 				</div>
 
 
 
 
 				<div class="jumbotron"
-					style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 20px;"
-					id="hyderabad">
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="village">
 					<p class="fa"
-						style="text-align: center; padding:10px ;border-radius:2px;font-size: 18px; font-weight: bold;background-color: #337ab7;color:#fff; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;width:100%;">
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Hyderabad Vedios</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<iframe width="100%" height="360"
+							src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+
+					</div>
+					<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px;">This
+							is an example to show the potential of an offcanvas layout
+							pattern in Bootstrap. Try some responsive-range viewport sizes to
+							see it in action.</p>
+
+
+				</div>
+
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
 						I <i class="fa fa-heart-o" style="font-size: 28px; color: red;"></i>
 						HYD @ Hyderabad
 					</p>
-					<div class="w3-content w3-section" style="width: 100%;margin-top:-15px;">
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
 						<img class="mySlidesHYD" src="img/pen1.jpg"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 5px;">
-						<div class="text">&#9757; @Golkonda </div>
-
-						<img class="mySlidesHYD" src="img/pen2.JPG"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 5px;"">
-						<div class="text"> &#9757; @Hotel</div>
-						<img class="mySlidesHYD" src="img/pen1.jpg"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 5px;">
-						<div class="text">&#9757; @Park</div>
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; margin-bottom: 5px;">
+						<div class="text">&#9757; @Golkonda</div>
+						
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px;">This
+							is an example to show the potential of an offcanvas layout
+							pattern in Bootstrap. Try some responsive-range viewport sizes to
+							see it in action.</p>
+						
 					</div>
-					<p
-						style="padding-top: 20px; font-size: 24px; text-align: center; font-weight: bold; font-family: serif;">
-						<a class="btn btn-default" href="galary.html" role="button">Hyderabad
-							Gallery »</a>
-					</p>
-
-
 				</div>
 
 
-<div class="jumbotron"
-					style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 20px;"
-					id="village">
+
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
 					<p class="fa"
-						style="text-align: center; padding:10px ;border-radius:2px;font-size: 18px; font-weight: bold;background-color: #337ab7;color:#fff; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;width:100%;">
-						Village & G-Moments
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						I <i class="fa fa-heart-o" style="font-size: 28px; color: red;"></i>
+						HYD @ Hyderabad
 					</p>
-					<div class="w3-content w3-section" style="width: 100%;margin-top:-15px;">
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
 						<img class="mySlidesHYD" src="img/pen1.jpg"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 5px;">
-						<div class="text">&#9757; @Golkonda </div>
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; margin-bottom: 5px;">
+						<div class="text">&#9757; @Golkonda</div>
+						<p
+							style="padding-top: 20px; font-size: 24px; text-align: center; font-weight: bold; font-family: serif;">
 
-						<img class="mySlidesHYD" src="img/pen2.JPG"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 5px;"">
-						<div class="text"> &#9757; @Hotel</div>
-						<img class="mySlidesHYD" src="img/pen1.jpg"
-							style="width: 100%; height: 300px; padding: 0px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 5px;">
-						<div class="text">&#9757; @Park</div>
+						</p>
 					</div>
-					<p
-						style="padding-top: 20px; font-size: 24px; text-align: center; font-weight: bold; font-family: serif;">
-						<a class="btn btn-default" href="galary.html" role="button">Village
-							Gallery »</a>
-					</p>
-
-
 				</div>
 
 
-<!-- people my know start -->
+
+				<!-- people my know start -->
 
 
 
@@ -268,151 +311,261 @@ color:red;
 
 
 
-<div class="jumbotron1"
-					style="text-align:left"
-					id="village">
-					<p class="fa"
-						style="text-align: center; padding:10px ;border-radius:2px;font-size: 18px; font-weight: bold;background-color: #337ab7;color:#fff; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;width:100%;">
-						People May I Know ?
-					</p>
-
-<div class="imgs" id="pr1">
-
- <span onclick="document.getElementById('pr1').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlYqshTqGAvl9qBBRmgK33UJDCs7sVKNDQsLu8aECc_4i3Zn9" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">SUNIL</a></p>
-</div>
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-
-</div>
-<div class="imgs" id="pr1">
-
- <span onclick="document.getElementById('pr1').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlYqshTqGAvl9qBBRmgK33UJDCs7sVKNDQsLu8aECc_4i3Zn9" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">SUNIL</a></p>
-</div>
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-
-<div class="imgs" id="pr2">
-
- <span onclick="document.getElementById('pr2').style.display='none'" class="close" title="Close Modal">&times;</span>
-
-<a target="_blank" href="img_forest.jpg">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA" alt="Forest" style="width:110px;height:110px;border-right:1px solid #ccc;">
-</a>
-<p><a href="#name" id="link">RAJA</a></p>
-</div>
-<p style="text-align:center;">
-<a class="btn btn-default"
-								href="#"  width="100%" style="background-color: #337ab7;color:#fff;"
-								role="button">More People »</a>
-
-</p>
-				</hr>
-				 <br>
-				
-				<!--People my i know end  -->
-				
 				<div class="jumbotron1"
-					style="text-align:left"
+					style="text-align: left; border: 1px solid #ccc; padding: 0px; border-right: 1px solid #fff; border-left: #fff;"
 					id="village">
 					<p class="fa"
-						style="text-align: center; padding:10px ;border-radius:2px;font-size: 18px; font-weight: bold;background-color: #337ab7;color:#fff; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;width:100%;">
-						Contact Me @  Social Net-WEB
+						style="text-align: left; padding: 10px; border-radius: 0px; font-weight: bold; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 0px; width: 100%;">
+						People May I Know ?</p>
+
+					<div class="imgs" id="pr1">
+
+						<span
+							onclick="document.getElementById('pr1').style.display='none'"
+							class="close" title="Close Modal">&times;</span> <a
+							target="main" href="img_forest.jpg"> <img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlYqshTqGAvl9qBBRmgK33UJDCs7sVKNDQsLu8aECc_4i3Zn9"
+							alt="Forest"
+							style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+						</a>
+						<p>
+							<a href="#name" id="link">SUNIL</a>
+						</p>
+					</div>
+
+					<div class="imgs" id="pr2">
+
+						<span
+							onclick="document.getElementById('pr2').style.display='none'"
+							class="close" title="Close Modal">&times;</span> <a
+							target="main" href="img_forest.jpg"> <img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+							alt="Forest"
+							style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+						</a>
+						<p>
+							<a href="#name" id="link">RAJA</a>
+						</p>
+					</div>
+
+				</div>
+
+
+				<div class="imgs" id="pr1">
+
+					<span onclick="document.getElementById('pr1').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlYqshTqGAvl9qBBRmgK33UJDCs7sVKNDQsLu8aECc_4i3Zn9"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">SUNIL</a>
 					</p>
-				<div class="col-xs-6 col-sm-3 " >
-				<div class="list-group" style="border-radius: 6px;width:300px;border:1px solid #fff;float:left:">
-					<a href="#home" class="list-group-item "><i class="fa fa-google" style="font-size:22px;color:red"></i> &nbsp;&nbsp; | Google | <span>http://gmail.com</span></a> 
-					<a href="#home" class="list-group-item "><i class="fa fa-instagram" style="font-size:22px;color:red"></i> &nbsp;&nbsp; | Instagram | <span>http://gmail.com</span> </a> 
-					<a href="#home" class="list-group-item ">Facebook</a> 
-					
 				</div>
-				
+
+				<div class="imgs" id="pr2">
+
+					<span onclick="document.getElementById('pr2').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">RAJA</a>
+					</p>
 				</div>
-				
-				
+
+
+				<div class="imgs" id="pr2">
+
+					<span onclick="document.getElementById('pr2').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">RAJA</a>
+					</p>
 				</div>
-				
-				
+
+				<div class="imgs" id="pr2">
+
+					<span onclick="document.getElementById('pr2').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">RAJA</a>
+					</p>
+				</div>
+
+				<div class="imgs" id="pr2">
+
+					<span onclick="document.getElementById('pr2').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">RAJA</a>
+					</p>
+				</div>
+
+
+				<div class="imgs" id="pr2">
+
+					<span onclick="document.getElementById('pr2').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">RAJA</a>
+					</p>
+				</div>
+
+				<div class="imgs" id="pr2">
+
+					<span onclick="document.getElementById('pr2').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">RAJA</a>
+					</p>
+				</div>
+
+				<div class="imgs" id="pr2">
+
+					<span onclick="document.getElementById('pr2').style.display='none'"
+						class="close" title="Close Modal">&times;</span> <a
+						target="main" href="img_forest.jpg"> <img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtT0kal8y-2po9MYwP5CWGbTGpgr2Mhn69IT8jCL0aYkMfWs4kfA"
+						alt="Forest"
+						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
+					</a>
+					<p>
+						<a href="#name" id="link">RAJA</a>
+					</p>
+				</div>
+				<p style="text-align: right;">
+					<a class="btn btn-default" href="#" width="100%"
+						style="background-color: #337ab7; color: #fff;" role="button">More
+						People »</a>
+
+				</p>
+				</hr>
+				<br>
+
+				<!--People my i know end  -->
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="village">
+					<p class="fa"
+						style="text-align: left; padding: 10px; font-weight: bold; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Hyderabd Vedios</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<iframe width="100%;" height="345"
+							src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+
+					</div>
+					<p
+						style="padding-bottom: 20px; font-size: 24px; text-align: left; font-weight: bold; font-family: serif;">
+
+					</p>
+
+
+
+				</div>
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="village">
+					<p class="fa"
+						style="text-align: left; padding: 10px; font-weight: bold; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Hyderabd Vedios</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<iframe width="100%;" height="345"
+							src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+
+					</div>
+					<p
+						style="padding-top: 20px; font-size: 24px; text-align: center; font-weight: bold; font-family: serif;">
+
+					</p>
+
+
+				</div>
+
+
+
+				<div class="jumbotron" style="text-align: left" id="village">
+					<p class="fa"
+						style="text-align: left; font-weight: bold; border padding: 10px; border-radius: 0px; background-color: #fff; color: #000; font-weight: bold; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Contact Me @ Social Net-WEB</p>
+					<div class="col-xs-6 col-sm-3 ">
+						<div class="list-group"
+							style="border-radius: 6px; width: 400px; float: left:">
+
+							<a href="https://www.google.co.in/search?q=PENCHAL+GAJANA"
+								target="main" class="list-group-item "><i
+								class="fa fa-google" style="font-size: 22px; color: black;"></i>
+								&nbsp;&nbsp; | Google | <span>PENCHAL GAJANA</span></a> <a
+								href="#home" class="list-group-item "><i class="fa fa-phone"
+								style="font-size: 22px; color: black;"></i></i> &nbsp;&nbsp; | Phone
+								| <span>+91-9705262802</span> </a> <a
+								href="https://www.instagram.com/penchalgajana/" target="_black"
+								class="list-group-item "><i class="fa fa-instagram"
+								style="font-size: 22px; color: red"></i> &nbsp;&nbsp; |
+								Instagram | <br> <span>https://www.instagram.com/penchalgajana/</span>
+							</a> <a href="https://www.facebook.com/penchal.g" target="_black"
+								class="list-group-item "><i class="fa fa-facebook-official"
+								style="font-size: 22px; color: royalblue"></i>&nbsp;&nbsp; |
+								Facebook|<br> <span>https://www.facebook.com/penchal.g</a>
+							<a href="https://github.com/penchal8" target="_black"
+								class="list-group-item "><i class="fa fa-github"
+								style="font-size: 22PX; color: black"></i></i>&nbsp;&nbsp; | Github
+								| <span>https://github.com/penchal8</a> <a
+								href="https://www.linkedin.com/in/penchalgajana/"
+								target="_black" class="list-group-item "><i
+								class="fa fa-linkedin-square"
+								style="font-size: 22px; color: royalblue"></i></i>&nbsp;&nbsp; |
+								Linked In | <span>https://www.linkedin.com/in/penchalgajana/</a>
+
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+
 			</div>
 			<!--/.col-xs-12.col-sm-9-->
-			
+
 			<!--Side Bar start  -->
 			<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
 
@@ -421,8 +574,8 @@ color:red;
 				<div class="list-group" style="border-radius: 6px;">
 					<a href="#home" class="list-group-item active">Recent Designs</a> <a
 						href="https://penchal8.github.io/javaprojects/#loginScreen"
-						target="_blank" class="list-group-item">Java Academic Projects</a>
-					<a href="https://penchal8.github.io/movievedios/" target="_blank"
+						target="main" class="list-group-item">Java Academic Projects</a>
+					<a href="https://penchal8.github.io/movievedios/" target="main"
 						class="list-group-item">Movie Vedios</a>
 				</div>
 
@@ -436,10 +589,10 @@ color:red;
 					<a href="#home" class="list-group-item active">Daily Updates</a>
 					<marquee behavior="scroll" direction="up"
 						onmouseover="this.stop();" onmouseout="this.start();"">
-						<a href="#" target="_blank" class="list-group-item">Topic One</a>
-						<a href="#" target="_blank" class="list-group-item">Topic One</a>
-						<a href="#" target="_blank" class="list-group-item">Topic One</a>
-						<a href="#" target="_blank" class="list-group-item">Topic One</a>
+						<a href="#" target="main" class="list-group-item">Topic One</a>
+						<a href="#" target="main" class="list-group-item">Topic One</a>
+						<a href="#" target="main" class="list-group-item">Topic One</a>
+						<a href="#" target="main" class="list-group-item">Topic One</a>
 
 
 
@@ -453,23 +606,23 @@ color:red;
 				<div class="list-group">
 					<a href="https://github.com/penchal8/ebooks"
 						class="list-group-item active">eBooks</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">C Programming</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
-						class="list-group-item">JAVA - ALL</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://drive.google.com/open?id=15NIrf4fFh2J8ob2yGxKelc2HZILvPB7M"
+						target="main" class="list-group-item">JAVA - ALL</a> <a
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">Hadoop</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">Android</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">ASP .Net</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">C Programming</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">Oracle</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">Salesforce</a> <a
-						href="https://github.com/penchal8/ebooks" target="_blank"
+						href="https://github.com/penchal8/ebooks" target="main"
 						class="list-group-item">@Books</a>
 				</div>
 				<!--  ebooks Stop -->
@@ -479,28 +632,28 @@ color:red;
 				<div class="list-group">
 					<a href="https://github.com/penchal8/ebooks/tree/master/company"
 						class="list-group-item active">Company Q & A PATTERN</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">CTS</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">HCL</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">WIPRO</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">IBM</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">HUGES</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">MINDTREE</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">SYNTEL</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">SATHYAM</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">POLARIS</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">INFOSYS</a> <a
-						href="https://github.com/penchal8/ebooks/tree/master/company" target="_blank"
-						class="list-group-item">IGATE</a>
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">CTS</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">HCL</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">WIPRO</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">IBM</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">HUGES</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">MINDTREE</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">SYNTEL</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">SATHYAM</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">POLARIS</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">INFOSYS</a> <a
+						href="https://github.com/penchal8/ebooks/tree/master/company"
+						target="main" class="list-group-item">IGATE</a>
 				</div>
 
 				<!--  company Stop-->
@@ -544,7 +697,6 @@ color:red;
 			setTimeout(carousel, 2000); // Change image every 2 seconds
 		}
 
-		
 		/* image slides */
 		var slideIndex = 1;
 		showSlides(slideIndex);
