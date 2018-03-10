@@ -54,6 +54,11 @@ h1 {
 	font-size: 2em
 }
 
+h6{
+	
+	font-weight:bold;
+	font-size:16px;
+}
 mark {
 	color: #000;
 	background: #ff0
@@ -5402,7 +5407,7 @@ a.badge:focus, a.badge:hover {
 	color: inherit;
 	border: 1px solid #DCDCDC;
 	background-color:#fff;
-	
+	height:auto;
 	
 	
 	
@@ -5766,8 +5771,20 @@ to {
 
 .list-group {
 	padding-left: 0;
-	margin-bottom: 20px
+	margin-bottom: 60px;
+	overflow-x:auto;
+	overflow-y:auto;
+	height:300px;
+	border-radius: 2px;
 }
+
+
+
+
+
+
+
+
 
 .list-group-item {
 	position: relative;
@@ -5775,7 +5792,8 @@ to {
 	padding: 10px 15px;
 	margin-bottom: -1px;
 	background-color: #fff;
-	border: 1px solid #ddd
+	border: 1px solid #ddd;
+	
 }
 
 .list-group-item:first-child {
