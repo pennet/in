@@ -19,7 +19,7 @@
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <link href="./assert/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
+<link href="img/fav.jpg" rel="shortcut icon">
 <!-- Custom styles for this template -->
 <link href="./assert/offcanvas.css" rel="stylesheet">
 <!-- <link href="./assert/style.css" rel="stylesheet"> -->
@@ -28,6 +28,8 @@
 <!-- fa icons import -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 <style>
 .mySlides {
@@ -118,6 +120,30 @@ p #link:hover {
 .close:hover {
 	color: red;
 }
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	color: blue;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 50px;
+	box-shadow: 2px 1px 5px 2px #ccc;
+	height:50px;
+	width:50px;
+}
+
+#myBtn:hover {
+	background-color: transparent;
+	
+}
 </style>
 <body>
 </head>
@@ -207,10 +233,8 @@ p #link:hover {
 						@ Glance</p>
 
 					<p
-						style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;">This
-						is an example to show the potential of an offcanvas layout pattern
-						in Bootstrap. Try some responsive-range viewport sizes to see it
-						in action.</p>
+						style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;">
+						Will be Updated Sooooooon....</p>
 				</div>
 
 				<!-- Photo Gallary Start -->
@@ -262,7 +286,7 @@ p #link:hover {
 
 				<!-- Photo Gallary Stop -->
 
-<!-- people my know start -->
+				<!-- people my know start -->
 
 
 
@@ -271,7 +295,7 @@ p #link:hover {
 					id="village">
 					<p class="fa"
 						style="text-align: left; padding: 10px; border-radius: 0px; font-weight: bold; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-bottom: 2px; width: 100%; height: 40px;">
-						B.Tech. ClassMates @NIST </p>
+						B.Tech. ClassMates @NIST</p>
 
 					<div class="imgs" id="pr1">
 
@@ -408,7 +432,8 @@ p #link:hover {
 
 				<div class="imgs" id="pr10">
 
-					<span onclick="document.getElementById('pr10').style.display='none'"
+					<span
+						onclick="document.getElementById('pr10').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
 						href="#kamesh"> <img
 						src="https://www.facebook.com/search/async/profile_picture/?fbid=100004026926028&width=72&height=72"
@@ -443,11 +468,14 @@ p #link:hover {
 					<p
 						style="text-align: left; padding: 10px; border-radius: 1px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px;">
 						Engineering Photo Gallary</p>
+
 					<div class="w3-content w3-section"
 						style="width: 100%; margin-top: -15px;">
 						<img class="mySlidesHYD" src="images/eng/eng2.jpg"
 							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 1px;">
 						<img class="mySlidesHYD" src="images/eng/eng1.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 1px;">
+						<img class="mySlidesHYD" src="images/mar/IMG_20160222_140454.jpg"
 							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 1px;">
 
 					</div>
@@ -696,7 +724,7 @@ p #link:hover {
 
 				<!--Sakeer End  -->
 
-<!-- people my know start -->
+				<!-- people my know start -->
 
 
 
@@ -706,153 +734,79 @@ p #link:hover {
 					<p class="fa"
 						style="text-align: left; padding: 10px; border-radius: 0px; font-weight: bold; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-bottom: 2px; width: 100%; height: 40px;">
 						People May I Know ?</p>
-
-					<div class="imgs" id="pr1">
-
-						<span
-							onclick="document.getElementById('pr1').style.display='none'"
-							class="close" title="Close Modal">&times;</span> <a target="main"
-							href="#saivamsi"> <img
-							src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/23379984_1980748275481179_8514653511646907672_n.jpg?oh=18b8569c137925ab7ef2257664a72598&oe=5B423A5F"
-							alt="Forest"
-							style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
-						</a>
-						<p>
-							<a href="#saivamsi" id="link">SAI VAMSI</a>
-						</p>
-					</div>
-
-					<div class="imgs" id="pr2">
-
-						<span
-							onclick="document.getElementById('pr2').style.display='none'"
-							class="close" title="Close Modal">&times;</span> <a target="main"
-							href="#chandra"> <img
-							src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/15318010_701010776734369_4447614825457692994_n.jpg?oh=6bc2ab4f4e05fbac8b5377a9117d2823&oe=5B4D57D4"
-							alt="Forest"
-							style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
-						</a>
-						<p>
-							<a href="#chandra" id="link">Chandra M</a>
-						</p>
-					</div>
-
 				</div>
 
+				<div class="imgs" id="pr12">
 
-				<div class="imgs" id="pr3">
-
-					<span onclick="document.getElementById('pr3').style.display='none'"
+					<span
+						onclick="document.getElementById('pr12').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#maheshb"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/p100x100/18922152_2194685237424513_7874920655858024990_n.jpg?oh=ac52c2dca4cd8e7065a13be25e1af5d1&oe=5B349303"
+						href="#alam"> <img
+						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-0/s235x165/19990535_140558223190020_8815906744300251999_n.jpg?oh=735af885699f5d3fe5d74625b6a681a6&oe=5B00935E"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#maheshb" id="link">Mahesh B</a>
+						<a href="#alam" id="link">Suneel Alam</a>
 					</p>
 				</div>
 
-				<div class="imgs" id="pr4">
 
-					<span onclick="document.getElementById('pr4').style.display='none'"
+
+
+
+
+				<div class="imgs" id="pr13">
+
+					<span
+						onclick="document.getElementById('pr13').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#narasimhasnv"> <img
-						src="https://www.facebook.com/search/async/profile_picture/?fbid=100004082028392&width=72&height=72"
+						href="#diwa"> <img
+						src="https://www.facebook.com/search/async/profile_picture/?fbid=100004022841588&width=72&height=72"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#narasimhasnv" id="link">Narasimha</a>
+						<a href="#diwa" id="link">Diwakdar M</a>
 					</p>
 				</div>
 
 
-				<div class="imgs" id="pr5">
 
-					<span onclick="document.getElementById('pr5').style.display='none'"
+
+				<div class="imgs" id="pr14">
+
+					<span
+						onclick="document.getElementById('pr14').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#sunilb"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/p74x74/15741157_1832577673690017_1336932319843288067_n.jpg?oh=ff66a1642dbd55491d76a96075531b78&oe=5B38601A"
+						href="#manoj"> <img
+						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/26168060_2457827001109943_4814566766501670776_n.jpg?oh=5dbd688bd246fd9e79fe184c093bdda8&oe=5B328739"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#sunilb" id="link">&nbsp;&nbsp;Sunil B</a>
+						<a href="#manoj" id="link">&nbsp;&nbsp;Manoj Pandu</a>
 					</p>
 				</div>
+				<div class="imgs" id="pr15">
 
-				<div class="imgs" id="pr6">
-
-					<span onclick="document.getElementById('pr6').style.display='none'"
+					<span
+						onclick="document.getElementById('pr15').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#surendra"> <img
-						src="https://instagram.fhyd2-1.fna.fbcdn.net/vp/5404b08c818e755f9f41ebc6899b1bcb/5B37B8B2/t51.2885-19/s150x150/21479832_513613249019105_8652148378693533696_a.jpg"
+						href="#venkat"> <img
+						src="https://www.facebook.com/search/async/profile_picture/?fbid=100003390060327&width=72&height=72"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#surendra" id="link">Surendra</a>
-					</p>
-				</div>
-
-				<div class="imgs" id="pr7">
-
-					<span onclick="document.getElementById('pr7').style.display='none'"
-						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#pavank"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/12047081_493610754144602_9184103954613716640_n.jpg?oh=cc9c9ea0036df10b07a06ce9331802d0&oe=5B4A1EEA"
-						alt="Forest"
-						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
-					</a>
-					<p>
-						<a href="#pavank" id="link">Pavan Kumar</a>
+						<a href="#venkat" id="link">Venkatesh S</a>
 					</p>
 				</div>
 
 
-				<div class="imgs" id="pr8">
 
-					<span onclick="document.getElementById('pr8').style.display='none'"
-						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#nagendra"> <img
-						src="https://www.facebook.com/search/async/profile_picture/?fbid=100003607558270&width=72&height=72"
-						alt="Forest"
-						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
-					</a>
-					<p>
-						<a href="#nadendra" id="link">Nagendra G</a>
-					</p>
-				</div>
 
-				<div class="imgs" id="pr9">
 
-					<span onclick="document.getElementById('pr9').style.display='none'"
-						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#pavanm"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/c1.0.160.160/p160x160/27867374_1012215362268973_670816034353439550_n.jpg?oh=f77348ca0cd5f59b88347412b74c0440&oe=5B4C08E2"
-						alt="Forest"
-						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
-					</a>
-					<p>
-						<a href="#pavanm" id="link">PAVAN M</a>
-					</p>
-				</div>
-
-				<div class="imgs" id="pr10">
-
-					<span onclick="document.getElementById('pr10').style.display='none'"
-						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#kamesh"> <img
-						src="https://www.facebook.com/search/async/profile_picture/?fbid=100004026926028&width=72&height=72"
-						alt="Forest"
-						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
-					</a>
-					<p>
-						<a href="#kamesh" id="link">Kamesh M</a>
-					</p>
-				</div>
 				<p id="paracom"></p>
 
 				<!-- <p style="text-align: right;">
@@ -964,6 +918,8 @@ p #link:hover {
 
 				<!--golkonda End  -->
 
+
+
 				<!-- people my know start -->
 
 
@@ -975,50 +931,50 @@ p #link:hover {
 						style="text-align: left; padding: 10px; border-radius: 0px; font-weight: bold; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-bottom: 2px; width: 100%; height: 40px;">
 						People May I Know ?</p>
 
-					<div class="imgs" id="pr1">
+					<div class="imgs" id="pr21">
 
 						<span
-							onclick="document.getElementById('pr1').style.display='none'"
+							onclick="document.getElementById('pr21').style.display='none'"
 							class="close" title="Close Modal">&times;</span> <a target="main"
-							href="#saivamsi"> <img
-							src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/23379984_1980748275481179_8514653511646907672_n.jpg?oh=18b8569c137925ab7ef2257664a72598&oe=5B423A5F"
+							href="#ravi"> <img
+							src="https://www.facebook.com/search/async/profile_picture/?fbid=100003239698279&width=72&height=72"
 							alt="Forest"
 							style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 						</a>
 						<p>
-							<a href="#saivamsi" id="link">SAI VAMSI</a>
+							<a href="#saivamsi" id="link">Ravi D Sol</a>
 						</p>
 					</div>
 
-					<div class="imgs" id="pr2">
+					<div class="imgs" id="pr22">
 
 						<span
-							onclick="document.getElementById('pr2').style.display='none'"
+							onclick="document.getElementById('pr22').style.display='none'"
 							class="close" title="Close Modal">&times;</span> <a target="main"
-							href="#chandra"> <img
-							src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/15318010_701010776734369_4447614825457692994_n.jpg?oh=6bc2ab4f4e05fbac8b5377a9117d2823&oe=5B4D57D4"
+							href="#maheshga"> <img
+							src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-0/p110x80/17799213_758168647722285_9150627914829013503_n.jpg?oh=6455bb882a8744ff7bd14ddeb2640659&oe=5B4C3D93"
 							alt="Forest"
 							style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 						</a>
 						<p>
-							<a href="#chandra" id="link">Chandra M</a>
+							<a href="#chandra" id="link">Mahesh G</a>
 						</p>
 					</div>
 
 				</div>
 
 
-				<div class="imgs" id="pr3">
+				<div class="imgs" id="pr23">
 
-					<span onclick="document.getElementById('pr3').style.display='none'"
+					<span onclick="document.getElementById('pr23').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
 						href="#aleem"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-9/17309093_1884163415129092_4837709699549742055_n.jpg?oh=0a7625684927458cb2dfb59f9ed69098&oe=5B3A4959"
+						src="https://www.facebook.com/search/async/profile_picture/?fbid=100005291023485&width=72&height=72"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#aleem" id="link">Aleem Shaik </a>
+						<a href="#aleem" id="link">Vinod P </a>
 					</p>
 				</div>
 
@@ -1037,88 +993,89 @@ p #link:hover {
 				</div>
 
 
-				<div class="imgs" id="pr5">
+				<div class="imgs" id="pr55">
 
-					<span onclick="document.getElementById('pr5').style.display='none'"
+					<span onclick="document.getElementById('pr55').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#sunilb"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/p74x74/15741157_1832577673690017_1336932319843288067_n.jpg?oh=ff66a1642dbd55491d76a96075531b78&oe=5B38601A"
+						href="#tree"> <img
+						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-0/p118x118/26169549_930414063824304_2844071669955930961_n.jpg?oh=d8c3e7ef9866cbcb09ddc91930474781&oe=5B01BAB2"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#sunilb" id="link">&nbsp;&nbsp;Sunil B</a>
+						<a href="#tree" id="link">&nbsp;&nbsp;Chitu ***</a>
 					</p>
 				</div>
 
-				<div class="imgs" id="pr6">
+				<div class="imgs" id="pr24">
 
-					<span onclick="document.getElementById('pr6').style.display='none'"
+					<span onclick="document.getElementById('pr24').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
 						href="#sunilk"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/p74x74/13151392_470759786453697_8926546567827917615_n.jpg?oh=80b1c544edd8580485b650bc4fc77504&oe=5B43D7B8"
+						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/p100x100/29062912_804626176392757_4812643887485026304_n.jpg?oh=c9bc3d4f0db74bfcd5612030c660c714&oe=5B49B0CB"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#sunilk" id="link">Sunil Kumar</a>
+						<a href="#sunilk" id="link">Harish G</a>
 					</p>
 				</div>
 
-				<div class="imgs" id="pr7">
+				<div class="imgs" id="pr25">
 
-					<span onclick="document.getElementById('pr7').style.display='none'"
+					<span onclick="document.getElementById('pr25').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#pavank"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/12047081_493610754144602_9184103954613716640_n.jpg?oh=cc9c9ea0036df10b07a06ce9331802d0&oe=5B4A1EEA"
+						href="#vishnu"> <img
+						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/p100x100/12510480_1213371055358959_6326989778917885472_n.jpg?oh=9f081de132a4d5f544faaa3dc1eda20a&oe=5B3EA77E"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#pavank" id="link">Pavan Kumar</a>
+						<a href="#vishnu" id="link">Vishnu</a>
 					</p>
 				</div>
 
 
-				<div class="imgs" id="pr8">
+				<div class="imgs" id="p26">
 
-					<span onclick="document.getElementById('pr8').style.display='none'"
+					<span onclick="document.getElementById('26').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#nagendra"> <img
-						src="https://www.facebook.com/search/async/profile_picture/?fbid=100003607558270&width=72&height=72"
+						href="#sreenu"> <img
+						src="https://www.facebook.com/search/async/profile_picture/?fbid=100002100194438&width=72&height=72"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#nadendra" id="link">Nagendra G</a>
+						<a href="#sreenu" id="link">Sreenu</a>
 					</p>
 				</div>
 
-				<div class="imgs" id="pr9">
+				<div class="imgs" id="pr27">
 
-					<span onclick="document.getElementById('pr9').style.display='none'"
+					<span onclick="document.getElementById('pr27').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#pavanm"> <img
-						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/c1.0.160.160/p160x160/27867374_1012215362268973_670816034353439550_n.jpg?oh=f77348ca0cd5f59b88347412b74c0440&oe=5B4C08E2"
+						href="#sudheer"> <img
+						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-1/p100x100/20953992_524848857873987_7412561287910733837_n.jpg?oh=5cdd3cfb1790c27e5abf024de1a17d87&oe=5B07CBC9"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#pavanm" id="link">PAVAN M</a>
+						<a href="#sudheer" id="link">Sudheer</a>
 					</p>
 				</div>
 
-				<div class="imgs" id="pr10">
+				<div class="imgs" id="pr28">
 
-					<span onclick="document.getElementById('pr10').style.display='none'"
+					<span
+						onclick="document.getElementById('pr28').style.display='none'"
 						class="close" title="Close Modal">&times;</span> <a target="main"
-						href="#kamesh"> <img
-						src="https://www.facebook.com/search/async/profile_picture/?fbid=100004026926028&width=72&height=72"
+						href="#sasi"> <img
+						src="https://scontent.fhyd2-1.fna.fbcdn.net/v/t1.0-0/p110x80/22221666_1972758139604622_2656551690943565740_n.jpg?oh=48d40c3472c13161fc245f0de09174e3&oe=5B3CB8A0"
 						alt="Forest"
 						style="width: 110px; height: 110px; border-right: 1px solid #ccc;">
 					</a>
 					<p>
-						<a href="#kamesh" id="link">Kamesh M</a>
+						<a href="#sasi" id="link">Sasi U</a>
 					</p>
 				</div>
 				<p id="paracom"></p>
@@ -1139,44 +1096,330 @@ p #link:hover {
 					id="village">
 					<p class="fa"
 						style="text-align: left; padding: 10px; font-weight: bold; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
-						Hyderabd Vedios</p>
+						Vamsi Creativity - Yo Yo Vamsi Albums</p>
 					<div class="w3-content w3-section"
 						style="width: 100%; margin-top: -15px;">
 						<iframe width="100%;" height="345"
-							src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+							src="https://www.youtube.com/embed/86FDJ91WC0Y"> </iframe>
 
 
 					</div>
 					<p
 						style="height: auto; padding-bottom: 20px; font-size: 24px; text-align: left; font-weight: bold; font-family: serif;">
 
-					</p>
+						Class Mate Make Vedios</p>
 
 
 
 				</div>
+
+
+
+
+				<!-- exp Start -->
 
 
 				<div class="jumbotron"
 					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
-					id="village">
+					id="engineering">
+
 					<p class="fa"
-						style="text-align: left; padding: 10px; font-weight: bold; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
-						Hyderabd Vedios</p>
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Exgineering Experiment</p>
 					<div class="w3-content w3-section"
 						style="width: 100%; margin-top: -15px;">
-						<iframe width="100%;" height="345"
-							src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-
-
+						<img class="mySlidesHYD" src="images/exp/IMG_20160328_175343.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 640px; margin-bottom: 5px;">
+						<div class="text">&#9757; @NIST-Final Year Project</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Feeling </b>4 years Journey
+						</p>
+						<p id="paracom">
+							<b>Project Name : </b> &nbsp;&nbsp;EMBEDDED ENERGY SAVER SYSTEM
+							FOR HOME APPLIANCES<br> <b>Theme : </b>
+							&nbsp;&nbsp;Automatic Power Saving System using IR Sensors..
+						</p>
 					</div>
-					<p
-						style="height: auto; padding-top: 20px; font-size: 24px; text-align: center; font-weight: bold; font-family: serif;">
-
-					</p>
-
-
 				</div>
+
+				<!--eXp End  -->
+
+
+
+
+				<!-- exp demo Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Project Explanation - @Seminar Hall - NIST</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/exp/IMG_20160314_153347.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 400px; margin-bottom: 5px;">
+						<div class="text">&#9757; @NIST-Final Year Project
+							Explanation</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Feeling </b> I am leading the final year project.
+						</p>
+						<p id="paracom">
+							<b>Project Name : </b> &nbsp;&nbsp;EMBEDDED ENERGY SAVER SYSTEM
+							FOR HOME APPLIANCES<br> <b>Theme : </b>
+							&nbsp;&nbsp;Automatic Power Saving System using IR Sensors..<br>
+							<b>Role : </b> &nbsp;&nbsp;Team Lead<br> <b>Members : </b>
+							&nbsp;&nbsp;Narasimha ,Shakeer ,Khadher <br> <b>Date : </b>
+							&nbsp;&nbsp;March 14th 2016 <br>
+						</p>
+					</div>
+				</div>
+
+				<!--eXp demo End  -->
+
+				<!-- exp night ganesh Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Ganesh Festival - @Ameerpet - HYD</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/exp/IMG_20160912_231936.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+						<div class="text">&#9757; Ganesh Festival</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Feeling </b> Night at 1PM Dhoom Dhamm Ganesh Festival @
+							Ameerpet Near Amoga Restarent..
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
+
+
+
+				<!-- exp night ganesh Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Ganesh Nimarjan - @S R Nagar Ground - HYD</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/exp/IMG_20160911_214413.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+						<div class="text">&#9757; @SR Nagar Ground</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Along With </b> Pawan Kalyan , Surendra
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
+
+				<!-- exp night ganesh Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Auto Journey College - Home</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/exp/IMG_20150804_160751.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+						<div class="text">&#9757; @NIST - College - CollegeDays</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Along With </b>Venkat , Kamesh
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
+				<!-- Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Class Room</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/exp/20160224_115549.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/exp/20160224_115522.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+
+
+						<div class="text">&#9757; @NIST - College - CollegeDays</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Along With </b>Nagendra , Vinod
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
+				<!-- Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						PDC Lab - NIST</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/exp/IMG_20151006_122854.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+
+
+						<div class="text">&#9757; @NIST - College - CollegeDays</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Along With </b>Power Pavan ,Pandu Manoj , Fz Mahesh , Yo Yo
+							Vamsi Goud
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
+
+				<!-- Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Indurstrial Tour - @NARL - Tirupathi</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/mar/20141114_164900.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/mar/DSC_0380.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/mar/DSC_0385.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/mar/DSC_0417.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+
+
+						<div class="text">&#9757; @NARL</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Along With </b>College Class Mates and HOD Somusekhar
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
+
+				<!-- Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						ClassMate Marriage</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD"
+							src="images/mar/IMG_20150423_102514_1_1.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 450px; margin-bottom: 5px;">
+
+
+						<div class="text">&#9757; @Rajampet - Marriage Function</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Along With </b>College Class Mates
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
+
+				<!-- Start -->
+
+
+				<div class="jumbotron"
+					style="padding-right: 0px; padding-left: 0px; padding-top: 10px; padding-bottom: 20px;"
+					id="engineering">
+
+					<p class="fa"
+						style="text-align: left; font-weight: bold; padding: 10px; border-radius: 2px; background-color: #fff; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: -9px; width: 100%;">
+						Engineering Friends</p>
+					<div class="w3-content w3-section"
+						style="width: 100%; margin-top: -15px;">
+						<img class="mySlidesHYD" src="images/fri/IMG_20160212_112328.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 400px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/fri/IMG_20160224_120903.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 400px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/fri/IMG_20160311_134223.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 400px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/fri/IMG_20160330_124812.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 400px; margin-bottom: 5px;">
+
+						<img class="mySlidesHYD" src="images/fri/IMG_20160422_130535.jpg"
+							style="width: 100%; padding: 0px; border: 1px solid #CCC; border-radius: 0px; height: 400px; margin-bottom: 5px;">
+
+
+						<div class="text">&#9757; @NIST</div>
+						<p
+							style="text-align: left; padding: 10px; font-weight: normal; font-variant: normal; border-radius: 1px; font-size: 14px; color: #000; font-family: 'Linux Libertine', 'Georgia', 'Times', serif; text-decoration: none; margin-top: 8px; height: auto;">
+							<b>Along With </b>College Class Mates
+						</p>
+						<p id="paracom"></p>
+					</div>
+				</div>
+
+				<!-- End  -->
 
 
 
@@ -1240,6 +1483,25 @@ p #link:hover {
 
 				<!--  End-->
 
+				<!--Daily Updates begin  -->
+				<h6>Enter-Engineering <sup style="color:red;">*Underprocessing....</sup></h6>
+				<div class="list-group"
+					style="border: none; margin-bottom: 20px; height: 200px;">
+
+
+					<a href="#friends" target="main" class="list-group-item" title="Not Yet Completed">Friends
+						Dubsmash</a> <a href="#hyd" target="main" class="list-group-item" title="Not Yet Completed">Hyderabad
+						Pics</a> <a
+						href="#hostel"
+						target="main" class="list-group-item" title="Not Yet Completed">Hostel Life</a>
+						 <a
+						href="#find"
+						target="main" class="list-group-item" title="Not Yet Completed">Find Friends Details</a>
+
+
+				</div>
+
+				<!-- Daily Updates End -->
 
 				<!--Daily Updates begin  -->
 				<h6>
@@ -1333,7 +1595,7 @@ p #link:hover {
 
 				<!--company Start  -->
 				<h6>
-					Company Q&A Pattern<span style="float: right;"><a
+					Company Q&A<span style="float: right;"><a
 						href="https://github.com/penchal8/ebooks/tree/master/company">See
 							All</a> </span>
 				</h6>
@@ -1419,8 +1681,14 @@ p #link:hover {
 
 		<hr>
 
+		<!--  Top Button-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fa fa-angle-double-up"
+				style="font-size: 24px; color: black;font-weight:bold;"></i>
+		</button>
+		<!-- Top Button sTOP -->
 		<footer>
-			<p>2018 © PENNET</p>
+			<p>2018 © PENNET.</p>
 		</footer>
 
 	</div>
@@ -1476,7 +1744,31 @@ p #link:hover {
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
 		}
+		
+		
+		
+		
 	</script>
+
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
 
 
 	<!-- Bootstrap core JavaScript
