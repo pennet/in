@@ -1,0 +1,7 @@
+DEBUG 0 [main]  SelectTest Proj1.mod1.App1.SelectTest.Driver is Loaded 00:15:31,110 
+INFO 109 [main]  SelectTest Proj1.mod1.App1.SelectTest.Conection established 00:15:31,219 
+INFO 125 [main]  SelectTest Proj1.mod1.App1.SelectTest.Satement obj is ready 00:15:31,235 
+INFO 141 [main]  SelectTest Proj1.mod1.App1.SelectTest.ResultSet geneated 00:15:31,251 
+DEBUG 141 [main]  SelectTest Proj1.mod1.App1.SelectTest.ResuletSet obj processed 00:15:31,251 
+DEBUG 141 [main]  SelectTest Proj1.mod1.App1.SelectTest.all jdbc streams are closed 00:15:31,251 
+DEBUG 141 [main]  SelectTest Proj1.mod1.App1.SelectTest.end of the Application 00:15:31,251 

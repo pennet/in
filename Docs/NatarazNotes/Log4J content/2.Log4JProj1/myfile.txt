@@ -1,0 +1,8 @@
+DEBUG 0 [main]  com.ds.SelectTest Begining of the App 2014-06-24 12:46:05,265 com.ds.SelectTest.main(SelectTest.java:26) 
+DEBUG 62 [main]  com.ds.SelectTest Porj1.mod1.SelectTest.Driver class loaded 2014-06-24 12:46:05,327 com.ds.SelectTest.main(SelectTest.java:31) 
+INFO 187 [main]  com.ds.SelectTest Proj1.mod1.SelectTest.Connection established 2014-06-24 12:46:05,452 com.ds.SelectTest.main(SelectTest.java:34) 
+INFO 218 [main]  com.ds.SelectTest Proj1.mod1.SelectTest.statement obj is created 2014-06-24 12:46:05,483 com.ds.SelectTest.main(SelectTest.java:37) 
+INFO 218 [main]  com.ds.SelectTest Proj1.mod1.SelectTest.Resuletset obj is ready 2014-06-24 12:46:05,483 com.ds.SelectTest.main(SelectTest.java:40) 
+INFO 234 [main]  com.ds.SelectTest Proj1.mod1.SelectTest.ResultSet obj is processed 2014-06-24 12:46:05,499 com.ds.SelectTest.main(SelectTest.java:49) 
+INFO 234 [main]  com.ds.SelectTest Proj1.mod1.SelectTest: All jdbc objs are closed 2014-06-24 12:46:05,499 com.ds.SelectTest.main(SelectTest.java:54) 
+DEBUG 234 [main]  com.ds.SelectTest End of the App 2014-06-24 12:46:05,499 com.ds.SelectTest.main(SelectTest.java:65) 

@@ -1,0 +1,283 @@
+>>>>>>>>>>>Log4J Apps>>>>>>>>>>>>>>>>>>
+------------------------------------------
+App1
+----------------SelectTest.java-------------------
+//SelectTest.java
+import java.sql.*; // jdbc api
+import org.apache.log4j.*; // log4j api
+
+public class  SelectTest
+{
+public static void main(String[] args) throws Exception
+ {
+
+	//logger obj is ready pointing to SelectTest class
+	Logger logger=Logger.getLogger(SelectTest.class);
+
+	//layout object
+         SimpleLayout layout=new SimpleLayout();
+	//appender object
+	ConsoleAppender appender=new ConsoleAppender(layout);
+
+	//add appender to logger
+	logger.addAppender(appender);
+
+	//set logger level for retrieving log messages
+	logger.setLevel((Level)Level.DEBUG); 
+
+
+        // write jdbc code here
+	try
+	{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	logger.debug("Proj1.mod1.App1.SelectTest.Driver is Loaded");
+
+	Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger");
+	logger.debug("Proj1.mod1.App1.SelectTest.Conection established");
+
+	 Statement  st=con.createStatement();
+	 logger.debug("Proj1.mod1.App1.SelectTest.Satement obj is ready");
+
+	 ResultSet rs=st.executeQuery("select * from emp1");
+	 if(rs==null)
+	{
+	  logger.warn("Proj1.mod1.App1.SelectTest.empty ResultSet has come");
+	}
+	else
+	{
+	logger.debug("Proj1.mod1.App1.SelectTest.ResultSet geneated");
+	}
+
+	 while(rs.next())
+	{
+	  System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+	}//while
+	logger.debug("Proj1.mod1.App1.SelectTest.ResuletSet obj processed");
+
+	rs.close();
+	st.close();
+	con.close();
+	logger.debug("Proj1.mod1.App1.SelectTest.all jdbc streams are closed");
+	}
+	catch(SQLException se)
+	{
+	 logger.error("Proj1.mod1.App1.SelectTest.DB Exception ");
+	 se.printStackTrace();
+	}
+	catch(Exception e)
+	 {
+	  logger.fatal("Proj1.mod1.App1.SelectTest.Unknown problem");
+	  e.printStackTrace();
+	  }
+	logger.debug("Proj1.mod1.App1.SelectTest.end of the Application");
+
+	}//main
+}//class
+//add log4-version.jar , odbc14.jar files to classpath
+//>javac SelectTest.java
+//>java SelectTest  
+-----------------------------------------------------
+App2
+---------------------SelectTest.java-------------------
+//SelectTest.java
+import java.sql.*; // jdbc api
+import org.apache.log4j.*; // log4j api
+import java.io.*;
+
+public class  SelectTest
+{
+public static void main(String[] args) throws Exception
+{
+	//logger obj is ready pointing to SelectTest class
+	Logger logger=Logger.getLogger(SelectTest.class);
+	//layout object
+        HTMLLayout layout=new HTMLLayout();
+	//appender object
+	FileOutputStream fos=new FileOutputStream("log1.html",true);
+	WriterAppender appender=new WriterAppender(layout,fos);
+	//add appender to logger
+	logger.addAppender(appender);
+
+	//set logger level for retrieving log messages
+	logger.setLevel((Level)Level.DEBUG); 
+
+         // write jdbc code here
+	try
+	{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	logger.debug("Proj1.mod1.App1.SelectTest.Driver is Loaded");
+
+	Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger");
+	logger.debug("Proj1.mod1.App1.SelectTest.Conection established");
+
+	 Statement  st=con.createStatement();
+	 logger.debug("Proj1.mod1.App1.SelectTest.Satement obj is ready");
+
+	 ResultSet rs=st.executeQuery("select * from emp1");
+	 if(rs==null)
+	{
+	 logger.warn("Proj1.mod1.App1.SelectTest.empty ResultSet has come");
+	}
+	else
+	{
+ 	logger.debug("Proj1.mod1.App1.SelectTest.ResultSet geneated");
+	}
+
+	 while(rs.next())
+	{
+	 System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+	}//while
+	logger.debug("Proj1.mod1.App1.SelectTest.ResuletSet obj processed");
+
+	   rs.close();
+	   st.close();
+	   con.close();
+	   logger.debug("Proj1.mod1.App1.SelectTest.all jdbc streams are closed");
+	}
+	catch(SQLException se)
+	{
+	logger.error("Proj1.mod1.App1.SelectTest.DB Exception ");
+	se.printStackTrace();
+	}
+	catch(Exception e)
+	{
+ 	 logger.fatal("Proj1.mod1.App1.SelectTest.Unknown problem");
+	 e.printStackTrace();
+	}
+	logger.debug("Proj1.mod1.App1.SelectTest.end of the Application");
+
+	}//main
+}//class
+
+//add log4-version.jar , odbc14.jar files to classpath
+//>javac SelectTest.java
+//>java SelectTest  
+---------------------------SelectTest.java-----------------
+//SelectTest.java
+import java.sql.*; // jdbc api
+import org.apache.log4j.*; // log4j api
+
+public class  SelectTest
+{
+public static void main(String[] args) throws Exception
+{
+	//logger obj is ready pointing to SelectTest class
+	Logger logger=Logger.getLogger(SelectTest.class);
+          
+	 //locate the properties file where log4j cfgs are palced
+  	PropertyConfigurator.configure("log.properties");
+
+
+       // write jdbc code here
+	try
+	{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	logger.debug("Proj1.mod1.App1.SelectTest.Driver is Loaded");
+
+	Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","scott","tiger");
+	logger.info("Proj1.mod1.App1.SelectTest.Conection established");
+
+	 Statement  st=con.createStatement();
+	 logger.debug("Proj1.mod1.App1.SelectTest.Satement obj is ready");
+
+	 ResultSet rs=st.executeQuery("select * from emp");
+	 if(rs==null)
+	{
+	 logger.warn("Proj1.mod1.App1.SelectTest.empty ResultSet has come");
+	}
+	else
+	{
+	logger.debug("Proj1.mod1.App1.SelectTest.ResultSet geneated");
+	}
+
+	 while(rs.next())
+	{
+	 System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+	}//while
+	logger.debug("Proj1.mod1.App1.SelectTest.ResuletSet obj processed");
+
+     rs.close();
+     st.close();
+     con.close();
+     logger.debug("Proj1.mod1.App1.SelectTest.all jdbc streams are closed");
+  }//try
+ catch(SQLException se)
+  {
+	logger.error("Proj1.mod1.App1.SelectTest.DB Exception ");
+	se.printStackTrace();
+   }
+   catch(Exception e)
+   {
+	logger.fatal("Proj1.mod1.App1.SelectTest.Unknown problem");
+	e.printStackTrace();
+   }
+    logger.debug("Proj1.mod1.App1.SelectTest.end of the Application");
+ }//main
+}//class
+//add log4-version.jar , odbc14.jar files to classpath
+//>javac SelectTest.java
+//>java SelectTest  
+-------------------log.properties--------------------
+#for ConsoleAppender,SimpleLayout  (# indicates comment)
+#log4j.rootLogger=INFO,S
+#log4j.appender.S=org.apache.log4j.ConsoleAppender
+#log4j.appender.S.layout=org.apache.log4j.SimpleLayout
+
+
+# for FileAppender,HTMLLayout
+#log4j.rootLogger=DEBUG,S
+#log4j.appender.S=org.apache.log4j.FileAppender
+#log4j.appender.S.File=mymsgs.html
+#log4j.appender.S.Append=true
+#log4j.appender.S.layout=org.apache.log4j.HTMLLayout
+
+# for RollingFileAppender,HTMLLayout
+#log4j.rootLogger=DEBUG,R
+#log4j.appender.R=org.apache.log4j.RollingFileAppender
+#log4j.appender.R.File=mylog1.html
+#log4j.appender.R.MaxFileSize=5KB
+#log4j.appender.R.MaxBackupIndex=10
+#log4j.appender.R.layout=org.apache.log4j.HTMLLayout
+
+
+#for DailyRollingFileAppender,PatternLayout
+log4j.rootLogger=DEBUG,R
+log4j.appender.R=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.R.File=myfile.txt
+log4j.appender.R.DatePattern='.'yyyy-MM-dd-HH-mm
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R.layout.ConversionPattern=%p %r [%t]  %c %m %d %n
+--------------------------------------------------------------------
+App3
+---------------------details.xml-------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"><log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+<appender name="cappender" class="org.apache.log4j.ConsoleAppender">
+ <layout class="org.apache.log4j.PatternLayout">
+  <param name="conversionPattern" value="%m%n"/>
+ </layout>
+</appender>
+
+<root>
+  <priority value ="warn" />
+  <appender-ref ref="cappender"/>
+</root>
+</log4j:configuration> 
+------------------ExternalXmlTest.java---------------
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+public class externalxmltest 
+{
+   static Logger logger = Logger.getLogger(externalxmltest.class);
+   public static void main(String args[]) 
+    {
+	 DOMConfigurator.configure("details.xml");
+
+	 logger.debug("Here is some DEBUG");
+	 logger.info("Here is some INFO");
+	 logger.warn("Here is some WARN");
+	 logger.error("Here is some ERROR");
+	 logger.fatal("Here is some FATAL");
+    }
+}
