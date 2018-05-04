@@ -1,0 +1,12 @@
+<web-app>
+
+<servlet>
+  <servlet-name>LocalMachineFile</servlet-name>
+  <servlet-class>TextFileReadAndSend</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>LocalMachineFile</servlet-name>
+  <url-pattern>/?</url-pattern>
+</servlet-mapping>
+</web-app>
