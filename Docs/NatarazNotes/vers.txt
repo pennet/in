@@ -1,0 +1,28 @@
+Java Project Development Tools,IDE's,Servers,Jars,Versions
+==========================================================
+
+=======================
+
+#JDK Versions:
+=============
+
+           JDK 1.8
+		   
+#Application Servers :
+======================
+               
+			  Apache Tomcat Server 7.0/8.0(admin/admin)(3030/4040/5050/6060)
+			 
+			 
+#Databases:
+===========
+
+
+                        MySQL 5.0 (root/root)
+
+#GUI Tool for MySQL:
+====================
+                 
+				              SQL Yog 5.0(root/root)
+							  
+#

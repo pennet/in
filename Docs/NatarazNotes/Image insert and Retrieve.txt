@@ -1,0 +1,24 @@
+Retrive Images==
+================
+
+http://www.codejava.net/coding/upload-files-to-database-servlet-jsp-mysql
+
+
+
+http://www.codesuggestions.com/java/insert-an-image-into-mysql-database-using-jsp-page/
+
+
+
+
+
+https://www.sitepoint.com/community/t/displaying-images-from-the-database-using-java-and-mysql/3454
+
+important:
+=========
+http://www.roseindia.net/jsp/retrieve-image.shtml
+
+
+https://anshuchoudhury.wordpress.com/2012/05/01/upload-retrieve-image-jspservletdatabase/
+
+
+https://stackoverflow.com/questions/2340406/how-to-retrieve-and-display-images-from-a-database-in-a-jsp-page
