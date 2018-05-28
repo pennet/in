@@ -1,0 +1,28 @@
+Instead of dealing with "()" and complexity involved in it, let's go
+with using a third-party library called "exp4j" (available for
+download at: https://lallafa.objecthunter.net/exp4j/index.html). This
+looks to be promising. Here are the steps to proceed:
+
+1. Download the latest jar named - exp4j-0.4.8.jar from the above
+site. It is just 46KB.
+
+2. You will also need to keep the LICENSE copy of that third-party jar
+in our distribution.
+
+3. The Test.java code will now look like:
+
+==================
+import net.objecthunter.exp4j.Expression;
+import net.objecthunter.exp4j.ExpressionBuilder;
+
+public class Test {
+
+    public static void main(String args[]) {
+
+        String exp = "(2+4)+(p^2+(3-1))";
+        Expression ex = new ExpressionBuilder(exp).variable("p").build();
+        double result = ex.setVariable("p", 3.14).evaluate();
+        System.out.println("result = " + result);
+    }
+
+}
