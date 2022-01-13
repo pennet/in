@@ -199,7 +199,7 @@ p #link:hover {
 	</nav>
 	<!-- /.navbar -->
 
-	<div class="container">
+	<div class="container"  id="datepicker">
 
 		<div class="row row-offcanvas row-offcanvas-right">
 
@@ -1628,7 +1628,7 @@ p #link:hover {
 				<!-- Daily Updates End -->
 
 				<!-- ebooks Start -->
-				<h6>
+			<!--	<h6>
 					eBooks<span style="float: right;"><a target="_blank"
 						href="https://drive.google.com/open?id=10iI2ne96UaIbyd0Mcedx_YKiQs4blWgR">See
 							All</a></span>
@@ -1682,11 +1682,11 @@ p #link:hover {
 						target="_blank" class="list-group-item">TeraDatat</a> <a
 						href="https://drive.google.com/drive/folders/1crPLbrWG__3yg6OZHkwv9tQum9znxghQ?usp=sharing"
 						target="main" class="list-group-item">LinkToFQL</a>
-				</div>
+				</div> -->
 				<!--  ebooks Stop -->
 
 				<!--company Start  -->
-				<h6>
+			<!--	<h6>
 					Company Q&A<span style="float: right;"><a target="_blank"
 						href="https://github.com/penchal8/ebooks/tree/master/company">See
 							All</a> </span>
@@ -1732,7 +1732,7 @@ p #link:hover {
 						target="_blank" class="list-group-item">OTHERS</a>
 
 				</div>
-
+                                     -->
 				<!--  company Stop-->
 
 
@@ -1892,6 +1892,13 @@ function topFunction() {
 	<script src="./assert/offcanvas.js.download"></script>
 
 <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(136187)</script> 
+
+ $(function() {
+     $('#datepicker').keypress(function(event) {
+          event.preventDefault();
+         return false;
+     });
+});
 
 </body>
 </html>
